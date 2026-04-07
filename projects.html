@@ -129,10 +129,7 @@ Jul 2025
 
 							<p>
 								<strong>Question #1 : Explain what does it means Immutable infrastructure?</strong>
-								xxxxxxx xxxxxxxxxxxx
-								xxxxx xxxx, xxxx x xxxxxxxx
-								xxxxx xxxx, xxxx x xxxxxxxx
-								xxxxx xxxx, xxxx x xxxxxxxx
+								Immutable infrastructure means that we do not change servers after they are deployed. If we need to update something, we create a new server from a new image and replace the old one. After that, the old server is destroyed. This approach has some benefits. First, all servers are always in the same state, so we can avoid configuration drift. Second, deployments become more predictable. Third, if something goes wrong, we can easily roll back by using the previous image.
 							</p>
 
 							<div class="border-start border-primary border-3 py-1 px-3 my-5">
@@ -143,10 +140,7 @@ Jul 2025
 							<p>
 								<strong>Question #2 : Explain the next command: <br> $docker exec -it Ubuntu
 									/bin/bash</strong>
-								xxxxxxx xxxxxxxxxxxx
-								xxxxx xxxx, xxxx x xxxxxxxx
-								xxxxx xxxx, xxxx x xxxxxxxx
-								xxxxx xxxx, xxxx x xxxxxxxx
+								This command opens an interactive bash shell inside a running Docker container named "Ubuntu." docker exec runs a command in a running container. -i keeps the input open, and -t creates a terminal. /bin/bash starts a bash shell. As a result, we can type commands directly inside the container.
 							</p>
 
 							<div class="mt-5">
